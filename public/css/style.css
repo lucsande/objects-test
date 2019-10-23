@@ -1,0 +1,16 @@
+@import "./components/object-1.css";
+@import "./components/object-2.css";
+@import "./components/object-3.css";
+
+.line {
+  margin: 2rem 0;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}

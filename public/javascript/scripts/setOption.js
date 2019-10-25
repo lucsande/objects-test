@@ -6,7 +6,6 @@ const setOption = () => {
   optionItems.forEach(optionItem => {
     optionItem.addEventListener("click", async event => {
       let option = event.target.text.replace("Option ", "");
-      console.log(option);
 
       const res = await axios.post("/items-info", { option: option });
       const itemsInfo = res.data;

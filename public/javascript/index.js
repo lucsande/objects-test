@@ -1,7 +1,8 @@
 import { setOption } from "./scripts/setOption.js";
-// import { hideOptions } from "./scripts/hideOptions";
+// import { toggleOptions } from "./scripts/toggleOptions";
 import { setQuantity } from "./scripts/setQuantity.js";
-// import { changePage } from "./scripts/changePage";
+import { changePage } from "./scripts/changePage.js";
 
-setQuantity();
 setOption();
+setQuantity();
+changePage();

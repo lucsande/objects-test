@@ -16,12 +16,17 @@ let option = "A";
 
 // routes
 app.get("/", (req, res) => {
+  const lastPage = pages.length - 1;
+  const isPreviousDisabled = currentPageNumber === 0 ? "disabled" : "";
+  const isNextDisabled = currentPageNumber >= lastPage ? "disabled" : "";
+
   res.render("index", { pages, currentPageNumber, option });
 });
 
 app.post("/items-info", (req, res) => {
   pages = req.body.pages || pages;
   option = req.body.option || option;
+  currentPageNumber = currentPageNumber + (req.body.pageChange || 0);
 
   if (pages.length === 0) {
     currentPageNumber = 0;

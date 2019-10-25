@@ -7,7 +7,7 @@
   border-right: solid 1px white;
 }
 
-#option,
+#options-button,
 #quantity {
   background-color: var(--lighter-color);
   border-top: solid 1px white;

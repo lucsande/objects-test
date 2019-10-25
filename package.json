@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./app.js",
-    "prod": "webpack --mode=production",
-    "dev-server": "webpack --watch --mode=development",
-    "dev-client": "webpack --config ./webpack.config.js",
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "node ./app.js"
   },
   "keywords": [],
   "author": "Lucas Coelho",
@@ -19,6 +15,9 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.11.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

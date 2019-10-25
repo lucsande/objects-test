@@ -2,6 +2,11 @@
 @import "./components/object-2.css";
 @import "./components/object-3.css";
 
+:root {
+  --darker-color: #06506b;
+  --lighter-color: #518993;
+}
+
 .line {
   margin: 2rem 0;
   height: 7rem;

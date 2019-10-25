@@ -1,13 +1,29 @@
-<div class="d-flex col-7 justify-content-center" id="object-3">
+<div class="flex-grow-1 justify-content-center" id="object-3">
   <div class="w-100">
-    <div class="line line-item">
-      Item A1
+    <div id="items-list">
+      <% if (pages[currentPageNumber]) { %>
+      <!---->
+      <% pages[currentPageNumber].forEach( item => { %>
+      <div class="line line-item">
+        Item <%= option %><%= item %>
+      </div>
+      <% }) %>
+      <!---->
+      <% } %>
     </div>
-    <div class="line line-item">
-      Item A2
-    </div>
-    <div class="line line-item">
-      Item A3
+    <div class="line">
+      <div>
+        <button
+          class="btn btn-outline-light bg-none"
+          id="previous-button"
+          disabled
+        >
+          <
+        </button>
+        <button class="btn btn-outline-light bg-none" id="next-button">
+          >
+        </button>
+      </div>
     </div>
   </div>
 </div>

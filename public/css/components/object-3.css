@@ -1,9 +1,12 @@
 #object-3 {
   width: 100%;
-  background-color: #06506b;
   padding: 0 2rem;
+  background-color: var(--darker-color);
+  border-left: solid 1px white;
+  border-right: solid 1px white;
 }
 
 .line-item {
-  background-color: #518993;
+  background-color: var(--lighter-color);
+  border: solid 1px white;
 }

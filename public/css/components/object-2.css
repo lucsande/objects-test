@@ -1,10 +1,14 @@
 #object-2 {
   width: 100%;
-  background-color: #518993;
-  border-right: solid 1px white;
+  background-color: white;
 }
 
 .dropdown-menu {
   text-align: center;
   width: 2rem !important;
+}
+
+button {
+  background-color: var(--lighter-color);
+  color: white;
 }

@@ -1,6 +1,11 @@
 #object-2 {
-  width: 100%;
+  width: 35rem;
   background-color: white;
+  transition: 1.5s ease-in;
+}
+
+.w-0 {
+  width: 0 !important;
 }
 
 .dropdown-menu {
@@ -11,4 +16,8 @@
 button {
   background-color: var(--lighter-color);
   color: white;
+}
+
+.object-show {
+  z-index: 500;
 }
